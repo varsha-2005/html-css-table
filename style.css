@@ -1,0 +1,39 @@
+/* Global Styles */
+table, td {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 7px;
+}
+
+table {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .mid {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    tr:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
